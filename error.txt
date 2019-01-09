@@ -1,0 +1,24 @@
+Matching score = 89.81%
+
+Yours:
+hi GEOGRE glad youre back loads of people have phoned you really i felt just 
+like your secretary sorry i went TO the library this afternoon to have a look 
+at a newspaper and i came across something really interesting what a book no a 
+brochure from a summer festival mainly spanish music look AT WHAT ive got AT here 
+spanish music i really love the guitar lets have a look so whats this group 
+guitarini theyre really good they HAVE a video with all the highlights of the festival 
+at THE stand in the lobby to the library so i heard them they play 
+fantastic instruments drums flutes ALL kinds of GUITARS I never heard anything like it before 
+sounds great OK SO we go then spoil IT ourselves yes lets 
+
+Correct:
+hi GEORGE glad youre back loads of people have phoned you really i felt just 
+like your secretary sorry i went INTO the library this afternoon to have a look 
+at a newspaper and i came across something really interesting what a book no a 
+brochure from a summer festival  mainly spanish music look ive got IT here spanish 
+music i really love the guitar lets have a look so whats this group guitarini 
+theyre really good they HAD a video with all the highlights of the festival at 
+A stand in the lobby to the library so i heard them they play fantastic 
+instruments  drums AND flutes AND OLD kinds of GUITAR IVE never heard anything like 
+it before sounds great OKAY SALL we go then spoil ourselves yes lets 
+

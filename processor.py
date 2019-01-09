@@ -16,7 +16,7 @@ def parse_data_file(file_path):
             continue
 
         raw_words = line.split()
-        words = [remove_non_alpha_characters(word) for word in raw_words]
+        words = [remove_non_alpha_characters(word).lower() for word in raw_words]
 
         content += words
 

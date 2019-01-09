@@ -55,3 +55,11 @@ def marking_error(lcc_content, typing_content):
             error_content.append(typing_content[id].upper())
 
     return error_content
+
+def write_error_to_file(error_content, error_file):
+    for error_content_id in range(len(error_content)):
+        error_file.write(error_content[error_content_id] + ' ')
+        if error_content_id % 15 == 14:
+            error_file.write('\n')
+
+    error_file.write('\n\n')
