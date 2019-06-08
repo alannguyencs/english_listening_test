@@ -1,3 +1,0 @@
-So I understand that the 4f represents limiting the decimals
-to 4 (with trailing zeros), but
-what does the 10

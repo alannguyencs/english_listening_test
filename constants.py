@@ -1,3 +1,5 @@
-tapescript_path = 'tapescript.txt'
-typing_path = 'typing.txt'
-error_path = 'error.txt'
+
+
+TAPESCRIPT_PATH = 'tapescript.txt'
+TYPING_PATH = 'typing.txt'
+ERROR_PATH = 'error.txt'

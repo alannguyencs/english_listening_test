@@ -1,13 +1,13 @@
 import codecs
-import constants
+from constants import *
 import utils
 import processor
 
 
 
-def main():
-    tapescript_content = processor.parse_data_file(constants.tapescript_path)
-    typing_content = processor.parse_data_file(constants.typing_path)
+def run():
+    tapescript_content = processor.parse_data_file(TAPESCRIPT_PATH)
+    typing_content = processor.parse_data_file(TYPING_PATH)
 
     # print (transcription_content)
     # print (typing_content)
@@ -20,7 +20,7 @@ def main():
     matching_score = 2 * len(lcc_content) / (len(tapescript_content) + len(typing_content))
 
     #Write matching score and error to file
-    error_file = open(constants.error_path, 'w')
+    error_file = open(ERROR_PATH, 'w')
     error_file.write('Matching score = {:.2f}%\n\n'.format(100 * matching_score))
 
     error_file.write('Yours:\n')
@@ -31,4 +31,4 @@ def main():
 
 
 
-main()
+run()
