@@ -50,6 +50,8 @@ def marking_error(lcc_content, typing_content):
             error_content.append(typing_content[id])
             run_id += 1
             if run_id == len(lcc_content):
+                for rest_word in typing_content[id+1:]:
+                    error_content.append(rest_word.upper())
                 break
         else:
             error_content.append(typing_content[id].upper())
