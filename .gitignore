@@ -1,2 +1,4 @@
 alan.txt
 *.webm
+*.pyc
+*.DS_Store

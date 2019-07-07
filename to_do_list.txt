@@ -1,0 +1,11 @@
+Given url:
+    Check if url is existed
+    Download audio
+    Dowload caption
+
+
+Database:
+    id
+    video_title
+    audio_path
+    caption
