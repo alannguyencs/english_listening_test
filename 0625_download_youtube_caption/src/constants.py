@@ -1,7 +1,15 @@
+import json
+from collections import OrderedDict
+import glob
+from datetime import datetime
+import pafy
+from pydub import AudioSegment
 
 
-
-
-PROJECT_PATH = "C:/Users/NExT/Documents/alan_project/0625_download_youtube_caption/"
+PROJECT_PATH = "/Users/alan/alan_project/english_listening_test/0625_download_youtube_caption/"
 AUDIO_PATH = PROJECT_PATH + 'audio/'
-LOG_PATH = PROJECT_PATH + 'log/'
+DATABASE_PATH = PROJECT_PATH + 'database/'
+URL_NEW_PATH = PROJECT_PATH + 'new_url.txt'
+YOUTUBE_PREFIX = "https://www.youtube.com/watch?v="
+
+INVALID_CHARS = '<>:\"\/|?*'
