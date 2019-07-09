@@ -2,3 +2,5 @@ alan.txt
 *.webm
 *.pyc
 *.DS_Store
+*.mp3
+*.json
