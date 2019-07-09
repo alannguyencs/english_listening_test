@@ -1,5 +1,6 @@
 from constants import *
 from utils import util
+from ytcc.download import Download
 import database
 
 
@@ -27,14 +28,18 @@ for url in url_list:
     best_audio_stream.download(audio_path)
 
     sound = AudioSegment.from_file(audio_path)
-    mp3_path = AUDIO_PATH + timestamp + '_' + video_title + '.' + '.mp3'
+    mp3_path = AUDIO_PATH + timestamp + '_' + video_title + '.mp3'
     sound.export(mp3_path, format="mp3", bitrate="128k")
     os.remove(audio_path)
 
+    download = Download()
+    caption = download.get_captions(url, 'en')
+
     json_data = OrderedDict()
-    json_data['id'] = util.num2str(file_cnt)
+    json_data['id'] = file_cnt
     json_data['url'] = url
     json_data['title'] = timestamp + '_' + video_title
+    json_data['caption'] = caption
     json_path = DATABASE_PATH + json_data['id'] + '.json'
     with open(json_path, 'w') as json_file:
         json.dump(json_data, json_file)
